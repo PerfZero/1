@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="image_wrapper">
+      <img src="/1.png" alt="" />
+      <img src="/2.png" alt="" />
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <img src="slider_1.png" alt="" class="swiper-slide" />
+          <img src="slider_2.png" alt="" class="swiper-slide" />
+          <img src="slider_3.png" alt="" class="swiper-slide" />
+        </div>
+      </div>
+      <img src="/3.png" alt="" />
+      <img class="image_suppot" src="/4.png" alt="" />
+      <img class="bar" src="/5.png" alt="" />
+    </div>
+  </body>
+</html>
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+  
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+   delay: 4000,
+ },
+
+});
+  </script>
